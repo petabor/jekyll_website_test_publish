@@ -10,12 +10,12 @@ order: 2
 # Left stacked images (top + total)
 top_img:
   - type: img
-    src: /jekyll_website_test_publish/assets/images/placeholder.png   
+    src: /assets/images/placeholder.png   
     alt: "Top"
     attrs: 'data-behavior="enlarge" data-id="special"'
 bottom_img:
   - type: img
-    src: /jekyll_website_test_publish/assets/images/placeholder.png
+    src: /assets/images/placeholder.png
     alt: "Bottom"
     attrs: 'data-behavior="enlarge"'
 ---
