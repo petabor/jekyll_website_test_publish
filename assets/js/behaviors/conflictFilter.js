@@ -13,10 +13,6 @@ export function init() {
     const bottomPath = `${base}/headlines_by_conflict/${file}`;
     topImg.src = topPath;
     bottomImg.src = bottomPath;
-
-    console.log('Base path is:', base);
-    console.log('Will load topPath:', `${base}/fatalities_by_conflict/${file}`);
-    console.log('Will load bottomPath:', `${base}/headlines_by_conflict/${file}`);
   }
 
   // When selection changes
