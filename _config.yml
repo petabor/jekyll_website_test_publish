@@ -22,7 +22,7 @@ title: The History of Conflicts in Figures
 email: borovska.peta@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Statistics of past and current conflicts.
-baseurl: "jekyll_website_test_publish" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll_website_test_publish" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  petabor
 
