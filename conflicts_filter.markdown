@@ -27,7 +27,7 @@ bottom_img:
 
 <section class="filter"
          data-filter-panel
-         data-base="/assets/images/conflicts/">
+         data-base="{{ site.baseurl }}/assets/images/conflicts/">
 
   <div class="filter-controls-box">
     <label>Select conflict
