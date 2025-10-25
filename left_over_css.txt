@@ -1,0 +1,431 @@
+// #myImg {
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: 0.3s;
+// }
+
+// #myImg:hover {opacity: 0.7;}
+
+// /* The Modal (background) */
+// .modal {
+//   display: none; /* Hidden by default */
+//   position: fixed; /* Stay in place */
+//   z-index: 1; /* Sit on top */
+//   padding-top: 200px; /* Location of the box */
+//   left: 0;
+//   top: 0;
+//   width: 100%; /* Full width */
+//   height: 100%; /* Full height */
+//   overflow: auto; /* Enable scroll if needed */
+//   background-color: rgb(0,0,0); /* Fallback color */
+//   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+// }
+
+// /* Modal Content (image) */
+// .modal-content {
+//   margin: auto;
+//   display: block;
+//   width: 100%;
+//   max-width: 1000px;
+// }
+
+// /* Caption of Modal Image */
+// #caption {
+//   margin: auto;
+//   display: block;
+//   width: 80%;
+//   max-width: 700px;
+//   text-align: center;
+//   color: #ccc;
+//   padding: 10px 0;
+//   height: 150px;
+// }
+
+// /* Add Animation */
+// .modal-content, #caption {  
+//   animation-name: zoom;
+//   animation-duration: 0.6s;
+// }
+
+// @keyframes zoom {
+//   from {transform: scale(0.1)} 
+//   to {transform: scale(1)}
+// }
+
+// /* The Close Button */
+// .close {
+//   position: absolute;
+//   top: 15px;
+//   right: 35px;
+//   color: #f1f1f1;
+//   font-size: 40px;
+//   font-weight: bold;
+//   transition: 0.3s;
+// }
+
+// .close:hover,
+// .close:focus {
+//   color: #bbb;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+
+// /* 100% Image Width on Smaller Screens */
+// @media only screen and (max-width: 700px){
+//   .modal-content {
+//     width: 100%;
+//   }
+// }
+
+
+// .imgLink {
+//   border: none;
+//   padding: 0;
+//   background: none;
+//   cursor: pointer;
+// }
+// .imgLink img {
+//   max-width: 600px;
+//   height: auto;
+// }
+
+// /* overlay */
+// #img-overlay {
+//   position: fixed;
+//   inset: 0;
+//   background: rgba(0,0,0,0.8);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 1500;
+// }
+// #img-overlay.hidden { display: none; }
+
+// #img-overlay img {
+//   max-width: 90vw;
+//   max-height: 90vh;
+//   box-shadow: 0 0 20px rgba(0,0,0,0.7);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .main-content-max-box2{
+//   display: flex;
+//   flex-direction: row;
+//   gap: 4rem;
+//   // max-width: 1800px;
+//   width: 100%;
+//   min-width: 0;
+//   align-items: stretch;
+// }
+
+// .main-content-max-box2-col{
+//   flex: 1 1 0;
+//   min-width: 0; /*500px*/
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+// }
+
+// #main-content-max-box2-img1{
+//   flex: 1.5 1 0;   /* grow twice as much as right column */
+//   max-width: 100%;
+//   width: 0;
+// }
+
+// /* Text under the small image */
+// #main-content-max-box2-text{
+//   margin: 0;
+//   line-height: 1.5;
+// }
+
+
+
+// /* Bar + text row */
+// .bar-text-row {
+//   display: flex;
+//   gap: 2em;
+//   align-items: flex-start; /* align top */
+//   justify-content: flex-start;
+// }
+
+// /* Text column on the left */
+// .year-text {
+//   flex: 1 1 30%; /* takes ~40% width */
+//   font-size: 1.5rem;
+// }
+
+// /* Bar image column on the right */
+// .bar-images {
+//   flex: 1 1 70%; /* takes ~60% width */
+//   display: flex;
+//   justify-content: center; /* center bar horizontally */
+//   padding-top: 30px;
+// }
+
+// // .bar-images img#bar-image {
+// //   width: 85%; /* adjust bar width */
+// //   max-height: 500px;
+// //   object-fit: contain;
+// // }
+// #bar-image {
+//   width: 40%;
+//   max-height: 300px;
+//   cursor: pointer;
+//   transition: width 0.3s ease;
+// }
+
+// /* Expanded bar */
+// #bar-image.expanded {
+//   width: 80%;
+// }
+
+// /* Right column for images */
+// .year-images {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 2em;
+// }
+
+// #map-image {
+//   max-width: 100%;
+//   max-height: 600px;
+//   object-fit: contain;
+//   cursor: grab;
+//   transition: transform 0.2s ease;
+// }
+
+// .year-images img#map-image {
+//   width: 100%;
+//   max-height: 550px;
+//   object-fit: contain;
+//   flex-grow: 2
+//   /* border: 1px solid #ccc;*/
+//   /* border-radius: 4px;*/
+// }
+
+
+// .site-header {
+//   display: flex;
+//   border-top: 5px solid rgb(66.25, 66.25, 66.25);
+//   border-bottom: 3px solid #e8e8e8;
+//   min-height: 62px; /* 55.95px*/
+//   position: sticky;
+//   top: 0px;
+//   z-index: 10000;
+//   background: rgb(143, 101, 101);
+//   justify-content: center;
+//   justify-items: right;
+//   // margin-left: 0px;
+//   // padding-left: 350px;
+//   // justify-content: center;
+//   // justify-content: space-between;
+//   // padding-left: 400px;
+// }
+
+
+// .nav-horz {
+//   display: flex;
+//   justify-content: space-between;
+//   justify-items: center;
+//   // gap: 5em; /* spacing between links */
+//   list-style: none;
+//   margin: 0;
+//   background-color: rgb(100, 94, 94);
+//   // padding-left: 600px;
+//   // padding-top: 15px;
+//   // justify-items: center;
+//   // padding: 0;
+//   // padding-left: 50em;
+//   // flex-shrink: 0;
+//   // justify-content: flex-end;
+// }
+
+// .nav-horz li a {
+//   // display: block;
+//   padding: 8px 0; /* vertical padding only */
+//   font-weight: 500;
+//   font-size: large;
+//   color: #0f0202;
+//   text-decoration: none;
+// }
+
+// .nav-horz li a:hover {
+//   color: rgb(104, 100, 100);
+//   text-decoration: underline;
+// }
+
+
+// /* Make nav vertical on the left */
+// .site-nav {
+//   position: fixed;   /* or absolute if you prefer */
+//   top: calc(62px + 8px);
+//   align-self: flex-start;
+//   height: 100vh;
+//   left: 0;
+//   background-color: #f5f5f5;
+//   z-index: 900; /* below header */
+// }
+
+
+// .nav-list {
+//   flex-direction: column;
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .site-nav ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0px;
+//   width: 350px;
+//   // background-color: #f1f1f1;
+// }
+
+// .site-nav li a {
+//   display: block;
+//   color: #0f0202;
+//   padding: 8px 86px;
+//   text-decoration: none;
+// }
+
+// /* Change the link color on hover */
+// .site-nav li a:hover {
+//   background-color: #555;
+//   color: rgb(248, 245, 245);
+// }
+
+// .nav-list li {
+//   margin-bottom: 1em;
+// }
+
+
+// .nav-list-vert .category-label{
+//   padding-left: 30px;
+//   font-weight: bolder;
+// }
+
+// .nav-list-vert .category > h3 {
+//   padding-left: 30px;
+//   font-weight: bolder;
+// }
+
+// .nav-list-vert .subpages {
+//   display: none;
+//   margin-left: 0;
+//   list-style: none;
+//   padding-left: 0;
+// }
+
+// .nav-list-vert input.category-toggle {
+//   display: none;
+// }
+
+// .nav-list-vert input.category-toggle:checked + label + .subpages {
+//   display: block;
+// }
+
+// .category-label {
+//   cursor: pointer;
+//   font-weight: bold;
+//   display: block;
+//   padding: 0.5em 0;
+// }
+
+
+// .footer-col {
+//   // padding: 210px;
+//   // float: left;
+//   // margin-bottom: -20px; 
+//   // padding-left: 0px;
+//   background-color: #f1f1f1;
+//   // padding: 50px;
+//   // padding: 40px;
+//   // padding-left: 100px;
+// }
+
+
+// .page-content {
+//   margin-left: 200px; /* space for nav */
+//   margin-right: 200px;
+//   // padding: 3em;
+//   // flex: 1;
+// }
+
+// /* Map container */
+// .year-images {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 2em;
+// }
+
+
+// /* Interactive feedback (applies to all IDs that start with "max-box-img") */
+// [id^="enlarge"] {
+//   cursor: zoom-in;
+//   transition: transform .15s ease, box-shadow .15s ease;
+//   border-radius: 6px;
+// }
+// [id^="enlarge"]:hover,
+// [id^="enlarge"]:focus-visible {
+//   transform: translateY(-1px) scale(1.02);
+//   box-shadow: 0 6px 20px rgba(0,0,0,.25);
+// }
+
+// /* Modal backdrop */
+// .modal {
+//   display: none;
+//   position: fixed;
+//   inset: 0;
+//   z-index: 1000;
+//   padding: 5vh 2vw;
+//   background: rgba(0,0,0,.9);
+// }
+
+// /* Modal open state (added via JS) */
+// .modal.is-open { display: block; }
+
+// /* Modal image */
+// .modal-content {
+//   display: block;
+//   margin: 0 auto;
+//   max-width: min(1500px, 95vw);
+//   max-height: 85vh;
+//   width: auto;
+//   height: auto;
+//   animation: zoom .25s ease-out;
+// }
+
+// /* Caption */
+// #caption {
+//   margin: 1rem auto 0;
+//   width: min(700px, 90vw);
+//   text-align: center;
+//   color: #ccc;
+//   min-height: 1.5em;
+// }
+
+// /* Zoom-in animation */
+// @keyframes zoom {
+//   from { transform: scale(.95); opacity: 0; }
+//   to   { transform: scale(1);   opacity: 1; }
+// }
+
+// /* Small screens */
+// @media (max-width: 700px){
+//   .modal { padding: 6vh 4vw; }
+//   .modal-content { max-width: 100%; }
+// }
