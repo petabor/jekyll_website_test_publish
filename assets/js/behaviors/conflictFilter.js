@@ -14,8 +14,8 @@ export function init() {
 
     function updateImages(file) {
       if (!file) return;
-      const topPath = "${base}/fatalities_by_conflict/${file}";
-      const bottomPath = "${base}/headlines_by_conflict/${file}";
+      const topPath = '${base}/fatalities_by_conflict/${file}';
+      const bottomPath = '${base}/headlines_by_conflict/${file}';
       topImg.src = topPath;
       bottomImg.src = bottomPath;
       console.log('✅ Updated images:', topPath, bottomPath);
