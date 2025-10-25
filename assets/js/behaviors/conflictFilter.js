@@ -1,41 +1,38 @@
 export function init() {
-  const run = () => {
-    const root = document.querySelector('[data-filter-panel]');
-    if (!root) {
-      console.warn('No [data-filter-panel] element found — will retry...');
-      setTimeout(run, 100); // retry every 100ms until DOM ready
-      return;
-    }
+  console.log("✅ conflictFilter.js running");
 
-    const base = root.dataset.base;
-    const select = root.querySelector('#conflict-select');
-    const topImg = root.querySelector('img[alt="Top"]');
-    const bottomImg = root.querySelector('img[alt="Bottom"]');
+  const root = document.querySelector('[data-filter-panel]');
+  if (!root) {
+    console.warn('⚠️ No [data-filter-panel] found');
+    return;
+  }
 
-    function updateImages(file) {
-      if (!file) return;
-      const topPath = '${base}/fatalities_by_conflict/${file}';
-      const bottomPath = '${base}/headlines_by_conflict/${file}';
-      topImg.src = topPath;
-      bottomImg.src = bottomPath;
-      console.log('✅ Updated images:', topPath, bottomPath);
-    }
+  const base = root.dataset.base;
+  const select = root.querySelector('#conflict-select');
+  const topImg = root.querySelector('img[alt="Top"]');
+  const bottomImg = root.querySelector('img[alt="Bottom"]');
 
-    select.addEventListener('change', (e) => updateImages(e.target.value));
+  console.log("Base path:", base);
+  console.log("First option:", select?.options[0]?.value);
 
-    const first = select.options[0]?.value;
-    if (first) {
-      select.value = first;
-      updateImages(first);
-    }
-  };
+  function updateImages(file) {
+    if (!file) return;
+    const topPath = `${base}/fatalities_by_conflict/${file}`;
+    const bottomPath = `${base}/headlines_by_conflict/${file}`;
+    console.log("→ updateImages:", topPath, bottomPath);
+    topImg.src = topPath;
+    bottomImg.src = bottomPath;
+  }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', run);
-  } else {
-    run();
+  select.addEventListener('change', e => updateImages(e.target.value));
+
+  const first = select.options[0]?.value;
+  if (first) {
+    select.value = first;
+    updateImages(first);
   }
 }
+
 
 
 
