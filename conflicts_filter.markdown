@@ -10,12 +10,12 @@ order: 2
 # Left stacked images (top + total)
 top_img:
   - type: img
-    src: /assets/images/placeholder.png    # initial, will be swapped by JS
+    src: /assets/images/conflicts/placeholder.png    # initial, will be swapped by JS
     alt: "Top"
     attrs: 'data-behavior="enlarge" data-id="special"'
 bottom_img:
   - type: img
-    src: /assets/images/placeholder.png
+    src: /assets/images/conflicts/placeholder.png
     alt: "Bottom"
     attrs: 'data-behavior="enlarge"'
 ---
