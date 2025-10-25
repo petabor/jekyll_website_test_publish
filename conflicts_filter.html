@@ -19,12 +19,9 @@ bottom_img:
     alt: "Bottom"
     attrs: 'data-behavior="enlarge"'
 ---
-
-
 <section class="filter"
          data-filter-panel
          data-base="/jekyll_website_test_publish/assets/images/conflicts">
-
   <div class="filter-controls-box">
     <label>Select conflict
       <select name="conflict" id="conflict-select">
@@ -36,10 +33,8 @@ bottom_img:
       </select>
     </label>
   </div>
-
   {% include panel.html layout="col-center" cells=page.top_img %}
   {% include panel.html layout="col-center" cells=page.bottom_img %}
 </section>
-
 <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js" defer></script>
 <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
