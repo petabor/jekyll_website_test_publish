@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const baseurl = '{{ site.baseurl }}'; // <-- add this line
+  const baseurl = '/jekyll_website_test_publish'; // <-- add this line
 
   const need = new Set([...document.querySelectorAll('[data-behavior]')]
     .map(el => el.dataset.behavior));
